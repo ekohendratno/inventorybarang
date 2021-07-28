@@ -1,5 +1,5 @@
 <?php $this->load->view('header');?>
-<link href="<?php echo base_url('css/teamof-elegant-modal-form.css') ?>" rel="stylesheet">
+<link href="<?php echo base_url('assets/css/teamof-elegant-modal-form.css') ?>" rel="stylesheet">
     <script type="text/javascript">
         function signin() {
 
@@ -51,13 +51,13 @@
 
                                         <div class="form-group">
                                             <div class="of-input-container">
-                                                <div class="of-input-icon"><img src="img/mail.svg"></div>
+                                                <div class="of-input-icon"><img src="assets/img/mail.svg"></div>
                                                 <input type="input" class="form-control" id="username" placeholder="Username">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="of-input-container">
-                                                <div class="of-input-icon"><img src="img/lock.svg"></div>
+                                                <div class="of-input-icon"><img src="assets/img/lock.svg"></div>
                                                 <input type="password" class="form-control" id="password" placeholder="Password">
                                                 <div class="of-input-validation lpassword-toggle-btn show-password"></div>
                                             </div>

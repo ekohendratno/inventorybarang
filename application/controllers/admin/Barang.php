@@ -122,7 +122,12 @@ class Barang extends CI_Controller{
             $baris['barang_keterangan'] = $barang_keterangan;
             $baris['barang_kondisi_saatini'] = $barang_kondisi_saatini;
 
-            $master = $this->db->insert('barang', $baris);
+            if(!empty($barang_id)){
+                $this->db->where(array('barang_id' => $barang_id));
+                $master = $this->db->update('barang', $baris);
+            }else{
+                $master = $this->db->insert('barang', $baris);
+            }
 
             if($master){
                 echo json_encode(array('status' => 1, 'pesan' => "Barang berhasil disimpan !"));
